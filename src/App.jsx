@@ -6,7 +6,7 @@ function App() {
   const [colour, setColour] = useState("green")
 
   console.log("App one loading")
-  console.log(sessionStorage)
+  console.log(sessionStorage.currentColour)
   console.log(colour)
 
   // Setup a listener for Session Storage changes
