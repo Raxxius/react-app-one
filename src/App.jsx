@@ -6,6 +6,7 @@ function App() {
   const [colour, setColours] = useState("red")
 
   console.log("App one loading")
+  console.log(sessionStorage)
   // Setup a listener for Session Storage changes
   useEffect(() => {
     const handleStorageChange = (event) => {
