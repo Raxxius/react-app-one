@@ -13,7 +13,8 @@ function App() {
   useEffect(() => {
     setColour(sessionStorage.currentColour)
     const handleStorageChange = () => {
-        setColour(JSON.parse(sessionStorage.currentColour));
+        setColour(sessionStorage.currentColour);
+        console.log("storage changed")
     };
 
     // Event listener
