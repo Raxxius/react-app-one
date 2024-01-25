@@ -3,15 +3,16 @@ import './App.css'
 
 function App() {
   // State function
-  const [colour, setColours] = useState("green")
+  const [colour, setColour] = useState("green")
 
   console.log("App one loading")
   console.log(sessionStorage)
   console.log(colour)
+  setColour(sessionStorage.currentColour)
   // Setup a listener for Session Storage changes
   useEffect(() => {
     const handleStorageChange = () => {
-        setColours(sessionStorage.currentColour);
+        setColour(sessionStorage.currentColour);
     };
 
     // Event listener
