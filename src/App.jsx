@@ -8,9 +8,10 @@ function App() {
   console.log("App one loading")
   console.log(sessionStorage)
   console.log(colour)
-  setColour(sessionStorage.currentColour)
+
   // Setup a listener for Session Storage changes
   useEffect(() => {
+    setColour(sessionStorage.currentColour)
     const handleStorageChange = () => {
         setColour(sessionStorage.currentColour);
     };
